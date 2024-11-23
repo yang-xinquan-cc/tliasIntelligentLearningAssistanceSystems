@@ -1,0 +1,18 @@
+mybatis:
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+        map-underscore-to-camel-case: true
+server:
+    port: 7049
+spring:
+    application:
+        name: springbootproject
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: 123456
+        url: jdbc:mysql://localhost:3306/tlias
+        username: root
+#spring事务管理日志
+logging:
+    level:
+        org.springframework.jdbc.support.JdbcTransactionManager: debug
